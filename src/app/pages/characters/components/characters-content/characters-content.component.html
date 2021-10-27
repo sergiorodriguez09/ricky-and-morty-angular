@@ -1,0 +1,14 @@
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyfze5QXesr4lvBcOwkFPD0u6Rzgx80dYOQ&usqp=CAU">
+<div>
+    <h1 class="title">Personajes</h1>
+    <ul>
+        <li *ngFor="let character of characters">
+            <h3>{{ character.name }}</h3>
+            <a routerLink="{{ character.id }}"><img src="{{ character.image }}"> </a>
+        </li>
+    </ul>
+</div>
+<footer>
+    <p class="footer">@2021 Rick and Morty. Todos los derechos reservados</p>
+</footer>
+</body>
